@@ -1,12 +1,11 @@
-import "../navbar.css"
+import { Link } from "react-router-dom"
+import "../components/NavBar.css"
 
 export default function NavBar() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
-
-                <img src="" alt="logo pet shop" />
+                <img src="/logo.png" alt="logo pet shop" />
 
                 <button
                     className="navbar-toggler"
@@ -23,27 +22,27 @@ export default function NavBar() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">
+                            <Link className="nav-link active" to="/">
                                 Home
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                Features
-                            </a>
+                            <Link className="nav-link" to="/banho-e-tosa">
+                                Banho e tosa
+                            </Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
-                                Pricing
-                            </a>
+                            <Link className="nav-link" to="/Adestramento">
+                                Adestramento
+                            </Link>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link disabled" aria-disabled="true">
-                                Disabled
-                            </a>
+                            <Link className="nav-link" to="/hotel-risorte">
+                                Hotel Risorte
+                            </Link>
                         </li>
                     </ul>
                 </div>
